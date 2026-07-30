@@ -27,10 +27,10 @@ jobs:
         run: mvn -B -Prelease clean verify
 
       - name: Deploy to Maven Central
-        if: ${{ secrets.OSSRH_USERNAME != '' }}
+        if: ${{ secrets.CENTRAL_TOKEN_USERNAME != '' }}
         env:
-          MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
-          MAVEN_PASSWORD: ${{ secrets.OSSRH_PASSWORD }}
+          MAVEN_USERNAME: ${{ secrets.CENTRAL_TOKEN_USERNAME }}
+          MAVEN_PASSWORD: ${{ secrets.CENTRAL_TOKEN_PASSWORD }}
           MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
         run: |
           mkdir -p ~/.m2

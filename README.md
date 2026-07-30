@@ -1,6 +1,12 @@
 # Morph
 
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.ashishkumarpanda/zeromapper-spring)](https://central.sonatype.com/artifact/io.github.ashishkumarpanda/zeromapper-spring/0.1.0)
+
 **Morph** (Maven artifacts: `io.github.ashishkumarpanda:zeromapper-*`) is a lightweight, annotation-driven Java library that eliminates almost all manual Entity ↔ DTO mapping in Spring Boot applications.
+
+- **Website:** [ashishkumarpanda.github.io/Morph-Portfolio](https://ashishkumarpanda.github.io/Morph-Portfolio/)
+- **Developer guide:** [Download Word doc](https://ashishkumarpanda.github.io/Morph-Portfolio/assets/Morph-Developer-Guide.docx)
+- **Demo app:** [Morph-Demo](https://github.com/Ashishkumarpanda/Morph-Demo)
 
 Unlike ModelMapper, you do not configure a generic reflection engine. Unlike MapStruct, you do not write mapper interfaces. You create DTOs — Morph maps everything else automatically.
 
@@ -152,13 +158,16 @@ mvn -pl zeromapper-benchmarks package
 java -jar zeromapper-benchmarks/target/benchmarks.jar
 ```
 
+## Documentation
+
+The full developer guide (annotations, Spring Boot setup, JDBC/JPA, testing, and best practices) is available on the [Morph Portfolio site](https://ashishkumarpanda.github.io/Morph-Portfolio/#docs).
+
 ## Roadmap
 
 - [ ] Full SpEL expression support
 - [ ] Lombok `@Builder` integration
 - [ ] Jackson `JsonNode` mapping module
 - [ ] MapStruct / ModelMapper benchmark suite
-- [ ] Maven Central release (`0.1.0`)
 
 ## License
 

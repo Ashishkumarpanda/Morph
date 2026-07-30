@@ -13,11 +13,6 @@
     <artifactId>zeromapper-spring</artifactId>
     <name>ZeroMapper Spring Boot Starter</name>
     <description>Spring Boot auto-configuration for Morph</description>
-
-    <properties>
-        <central.skipPublishing>true</central.skipPublishing>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>io.github.ashishkumarpanda</groupId>

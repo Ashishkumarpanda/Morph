@@ -13,11 +13,6 @@
     <artifactId>zeromapper-core</artifactId>
     <name>ZeroMapper Core</name>
     <description>Core mapping engine for Morph</description>
-
-    <properties>
-        <central.skipPublishing>true</central.skipPublishing>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>io.github.ashishkumarpanda</groupId>

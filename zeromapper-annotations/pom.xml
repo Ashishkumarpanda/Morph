@@ -13,11 +13,6 @@
     <artifactId>zeromapper-annotations</artifactId>
     <name>ZeroMapper Annotations</name>
     <description>Annotation definitions for Morph mapping</description>
-
-    <properties>
-        <central.skipPublishing>true</central.skipPublishing>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>

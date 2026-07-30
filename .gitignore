@@ -37,3 +37,7 @@ spotbugsXml.xml
 # Secrets
 *.env
 .env.*
+
+# Docs build tooling
+docs/node_modules/
+docs/package-lock.json

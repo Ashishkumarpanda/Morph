@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>dev.morph</groupId>
+    <groupId>io.github.ashishkumarpanda</groupId>
     <artifactId>zeromapper-parent</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.0</version>
     <packaging>pom</packaging>
 
     <name>Morph (ZeroMapper)</name>
     <description>Lightweight, annotation-driven Entity ↔ DTO mapper for Spring Boot</description>
-    <url>https://github.com/morphmapper/morph</url>
+    <url>https://github.com/Ashishkumarpanda/Morph</url>
 
     <licenses>
         <license>
@@ -23,15 +23,17 @@
     <developers>
         <developer>
             <name>Ashish Kumar Panda</name>
-            <organization>morphmapper</organization>
-            <organizationUrl>https://github.com/morphmapper</organizationUrl>
+            <email>ashishkumarakp143@gmail.com</email>
+            <organization>Ashishkumarpanda</organization>
+            <organizationUrl>https://github.com/Ashishkumarpanda</organizationUrl>
         </developer>
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/morphmapper/morph.git</connection>
-        <developerConnection>scm:git:ssh://github.com/morphmapper/morph.git</developerConnection>
-        <url>https://github.com/morphmapper/morph</url>
+        <connection>scm:git:https://github.com/Ashishkumarpanda/Morph.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/Ashishkumarpanda/Morph.git</developerConnection>
+        <url>https://github.com/Ashishkumarpanda/Morph</url>
+        <tag>v0.1.0</tag>
     </scm>
 
     <modules>
@@ -81,32 +83,32 @@
             </dependency>
 
             <dependency>
-                <groupId>dev.morph</groupId>
+                <groupId>io.github.ashishkumarpanda</groupId>
                 <artifactId>zeromapper-annotations</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>dev.morph</groupId>
+                <groupId>io.github.ashishkumarpanda</groupId>
                 <artifactId>zeromapper-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>dev.morph</groupId>
+                <groupId>io.github.ashishkumarpanda</groupId>
                 <artifactId>zeromapper-spring</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>dev.morph</groupId>
+                <groupId>io.github.ashishkumarpanda</groupId>
                 <artifactId>zeromapper-jdbc</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>dev.morph</groupId>
+                <groupId>io.github.ashishkumarpanda</groupId>
                 <artifactId>zeromapper-jpa</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>dev.morph</groupId>
+                <groupId>io.github.ashishkumarpanda</groupId>
                 <artifactId>zeromapper-test</artifactId>
                 <version>${project.version}</version>
             </dependency>

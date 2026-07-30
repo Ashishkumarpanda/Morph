@@ -1,6 +1,6 @@
 # Morph
 
-**Morph** (Maven artifacts: `dev.morph:zeromapper-*`) is a lightweight, annotation-driven Java library that eliminates almost all manual Entity ↔ DTO mapping in Spring Boot applications.
+**Morph** (Maven artifacts: `io.github.ashishkumarpanda:zeromapper-*`) is a lightweight, annotation-driven Java library that eliminates almost all manual Entity ↔ DTO mapping in Spring Boot applications.
 
 Unlike ModelMapper, you do not configure a generic reflection engine. Unlike MapStruct, you do not write mapper interfaces. You create DTOs — Morph maps everything else automatically.
 
@@ -33,9 +33,9 @@ User entity = Mapper.map(dto, User.class);
 
 ```xml
 <dependency>
-    <groupId>dev.morph</groupId>
+    <groupId>io.github.ashishkumarpanda</groupId>
     <artifactId>zeromapper-spring</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.0</version>
 </dependency>
 ```
 
@@ -43,9 +43,9 @@ For core-only usage (no Spring):
 
 ```xml
 <dependency>
-    <groupId>dev.morph</groupId>
+    <groupId>io.github.ashishkumarpanda</groupId>
     <artifactId>zeromapper-core</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.0</version>
 </dependency>
 ```
 

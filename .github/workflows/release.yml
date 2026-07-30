@@ -27,12 +27,16 @@ jobs:
         run: mvn -B -Prelease clean verify
 
       - name: Deploy to Maven Central
-        if: ${{ secrets.CENTRAL_TOKEN_USERNAME != '' }}
         env:
           MAVEN_USERNAME: ${{ secrets.CENTRAL_TOKEN_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.CENTRAL_TOKEN_PASSWORD }}
           MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
+          MAVEN_GPG_PRIVATE_KEY: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }}
         run: |
+          if [ -z "$MAVEN_USERNAME" ]; then
+            echo "Skipping Maven Central deploy: CENTRAL_TOKEN_USERNAME secret is not configured."
+            exit 0
+          fi
           mkdir -p ~/.m2
           cat > ~/.m2/settings.xml <<EOF
           <settings>
@@ -45,7 +49,7 @@ jobs:
             </servers>
           </settings>
           EOF
-          echo "${{ secrets.MAVEN_GPG_PRIVATE_KEY }}" | gpg --batch --import
+          echo "$MAVEN_GPG_PRIVATE_KEY" | gpg --batch --import
           mvn -B -Prelease deploy -DskipTests -Dgpg.passphrase=${MAVEN_GPG_PASSPHRASE}
 
       - name: Upload release artifacts

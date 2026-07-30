@@ -14,6 +14,10 @@
     <name>ZeroMapper JPA</name>
     <description>JPA and native query mapping support for Morph</description>
 
+    <properties>
+        <central.skipPublishing>true</central.skipPublishing>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>io.github.ashishkumarpanda</groupId>
